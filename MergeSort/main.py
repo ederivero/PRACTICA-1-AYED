@@ -1,8 +1,6 @@
-import timeit
+import time
 
-
-def merge_sort():
-    arr = [64, 34, 25, 12, 22, 11, 90]
+def merge_sort(arr):    
     if len(arr) > 1:
         mid = len(arr) // 2
         left_half = arr[:mid]
@@ -33,7 +31,12 @@ def merge_sort():
             k += 1
 
 
+arr = [1,2,3]
+start_time = time.time()
 
-tiempo = timeit.timeit(merge_sort, number=1000)
+merge_sort(arr)
+end_time = time.time()
+elapsed_time = end_time - start_time
 
-print("Tiempo promedio de ejecución:", tiempo, "segundos")
+
+print("Tiempo de procesamiento:", elapsed_time, "segundos")

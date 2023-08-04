@@ -56,10 +56,10 @@ func mergeSort(arr []int, left int, right int) {
 }
 
 func main() {
-	arr := []int{64, 34, 25, 12, 22, 11, 90}
+	arr := []int{1, 2, 3}
 	inicio := time.Now()
 	mergeSort(arr, 0, len(arr)-1)
 	fin := time.Now()
-	tiempoEjecucion := float64(fin.Sub(inicio).Milliseconds())
+	tiempoEjecucion := float64(fin.Sub(inicio).Seconds())
 	fmt.Printf("Tiempo de ejecución: %.8f", tiempoEjecucion)
 }

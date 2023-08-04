@@ -17,7 +17,7 @@ func bubbleSort(arr []int) {
 }
 
 func main() {
-	arr := []int{1}
+	arr := []int{1, 2, 3}
 	inicio := time.Now()
 	bubbleSort(arr)
 	fin := time.Now()
