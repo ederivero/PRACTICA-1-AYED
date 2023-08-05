@@ -192,4 +192,5 @@ def MS():
 
 
 
-Burbuja()
+print('MS')
+MS()
